@@ -3,3 +3,14 @@ Welcome to my banking system application!
 Date: 09/08/19
 Language: C++
 Data Structure: ArrayList
+
+Instructions for Compiling on macOS:
+1. Download all files onto desktop
+2. Open up terminal
+3. Go to the directory where the files are located on your terminal
+4. Once inside the folder, type "make" without the quotation marks
+5. After typing make, then type "./banker" without the quotation marks
+6. Program should run after that
+
+Instructions for Compiling on Windows:
+-Will be updating information
