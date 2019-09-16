@@ -9,6 +9,7 @@ using namespace std;
 int main() {
     int val;
     deposit depo;
+    withdraw wdraw;
     double totalBalance = 3000.00;
 
     fprintf(stdout, "Hello! Welcome to Freedom Banking\n");
@@ -24,7 +25,7 @@ int main() {
         depo.askAmount(val, totalBalance);
 
     if(val == 2)
-        fprintf(stdout, "Number 2 picked\n");
+        wdraw.askAmount(val, totalBalance);
 
     if(val == 3)
         fprintf(stdout, "Number 3 picked\n");

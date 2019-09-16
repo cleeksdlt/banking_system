@@ -7,6 +7,9 @@
 using namespace std;
 
 class withdraw {
+    public:
+        void askAmount(double initAmount, double totalBalance);
+        void subAmount(double withdrawAmount, double totalBalance);
 
 };
 
