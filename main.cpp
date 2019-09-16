@@ -8,6 +8,8 @@ using namespace std;
 
 int main() {
     int val;
+    deposit depo;
+    double totalBalance = 3000.00;
 
     fprintf(stdout, "Hello! Welcome to Freedom Banking\n");
     fprintf(stdout, "Here are a few options for you:\n");
@@ -18,10 +20,8 @@ int main() {
 
     cin >> val;
 
-    deposit depo;
-
     if(val == 1) 
-        depo.askAmount(val);
+        depo.askAmount(val, totalBalance);
 
     if(val == 2)
         fprintf(stdout, "Number 2 picked\n");
