@@ -3,13 +3,15 @@
 #include <string>
 #include "deposit.hpp"
 #include "withdraw.hpp"
+#include "balance.hpp"
 
 using namespace std;
 
 int main() {
     int val;
-    deposit depo;
+    deposit ddepo;
     withdraw wdraw;
+    balance bbala;
     double totalBalance = 3000.00;
 
     fprintf(stdout, "Hello! Welcome to Freedom Banking\n");
@@ -22,16 +24,20 @@ int main() {
     cin >> val;
 
     if(val == 1) 
-        depo.askAmount(val, totalBalance);
+        ddepo.askAmount(val, totalBalance);
 
     if(val == 2)
         wdraw.askAmount(val, totalBalance);
 
     if(val == 3)
-        fprintf(stdout, "Number 3 picked\n");
+        bbala.setBalance(totalBalance);
+        totalBalance = bbala.getBalance();
+        fprintf(stdout, "Total Balance: %.2f\n", totalBalance);
 
-    if(val == 4)
+    if(val == 4) {
+        fprintf(stdout, "Thank you for choosing Freedom Banking!\n");
+        fprintf(stdout, "Goodbye!\n");
         EXIT_SUCCESS;
-
+    }
     return 0;
 }

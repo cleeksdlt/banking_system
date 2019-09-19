@@ -5,7 +5,7 @@
 
 void deposit::askAmount(double initAmount, double totalBalance) {
     string answer;
-    fprintf(stdout, "Please enter how much you would like to deposit:$");
+    fprintf(stdout, "Please enter how much you would like to deposit $");
     cin >> initAmount;
     fprintf(stdout, "Is $%.2f correct?(y/n)\n", initAmount);
     cin >> answer;

@@ -5,7 +5,7 @@
 
 void withdraw::askAmount(double initAmount, double totalBalance) {
     string answer;
-    fprintf(stdout, "Please enter how much you would like to withdraw:$");
+    fprintf(stdout, "Please enter how much you would like to withdraw $");
     cin >> initAmount;
     fprintf(stdout, "Is $%.2f correct?(y/n)\n", initAmount);
     cin >> answer;
@@ -15,7 +15,6 @@ void withdraw::askAmount(double initAmount, double totalBalance) {
         subAmount(initAmount, totalBalance);
     if(answer == "no")
         askAmount(initAmount, totalBalance);
-
 }
 
 void withdraw::subAmount(double withdrawAmount, double totalBalance) {
